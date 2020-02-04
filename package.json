@@ -1,0 +1,33 @@
+{
+  "name": "vproker3-test-server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node dist/www.js",
+    "dev": "nodemon --exec babel-node src/www.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/www.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "docxtemplater": "^3.15.0",
+    "express": "~4.16.1",
+    "express-csv": "^0.6.0",
+    "http-errors": "~1.6.3",
+    "json2csv": "^4.5.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.6",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "~1.9.1",
+    "pizzip": "^3.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
